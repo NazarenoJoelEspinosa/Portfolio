@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nazareno Espinosa — Panel de sistemas y sitios web</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <div class="brand"><span class="dot"></span> NAZARENO ESPINOSA <span class="mono" style="color:var(--muted); font-weight:400; font-size:12px;">/ dev</span></div>
+    <nav class="navlinks">
+      <a href="#sistemas">Proyectos</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+  <section class="hero">
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow">5 sistemas activos</div>
+        <h1 class="title">Construyo sitios y<br>mini sistemas que<br><span>sostienen la operación real.</span></h1>
+        <p class="lede">Desarrollador full-stack. Diseño e implemento desde landing pages hasta paneles de gestión con datos en vivo — el tipo de herramienta que un negocio usa todos los días, no solo mira una vez.</p>
+        <div class="hero-actions">
+          <a href="#sistemas" class="btn btn-primary">Ver proyectos ↓</a>
+          <a href="#contacto" class="btn btn-ghost">Contactarme</a>
+        </div>
+      </div>
+
+      <div class="console">
+        <div class="console-head">
+          <span>Estado de sistemas</span>
+          <span class="lights"><span></span><span></span><span></span></span>
+        </div>
+        <a href="#oxigas" class="console-row"><span class="led"></span><span class="name">OxigasWeb</span><span class="id mono">SYS-01</span><span class="status mono">ONLINE</span></a>
+        <a href="#hojaderuta" class="console-row"><span class="led"></span><span class="name">Hoja de Ruta Oxigas</span><span class="id mono">SYS-02</span><span class="status mono">ONLINE</span></a>
+        <a href="#alquileres" class="console-row"><span class="led"></span><span class="name">Control de Alquileres</span><span class="id mono">SYS-03</span><span class="status mono">ONLINE</span></a>
+        <a href="#obssesive" class="console-row"><span class="led"></span><span class="name">Obssesive</span><span class="id mono">SYS-04</span><span class="status mono">ONLINE</span></a>
+        <a href="#ciudadela" class="console-row"><span class="led"></span><span class="name">Ciudadela Norte</span><span class="id mono">SYS-05</span><span class="status mono">ONLINE</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="sistemas">
+    <div class="section-head">
+      <h2>Proyectos</h2>
+      <span class="count mono">05 sistemas desplegados</span>
+    </div>
+
+    <div class="grid">
+
+      <!-- SYS-01 OxigasWeb -->
+      <article class="card" id="oxigas">
+        <div class="card-top">
+          <span class="sysid mono">SYS-01</span>
+          <span class="tag tag-site">SPA dinámica</span>
+        </div>
+        <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="var(--signal)" stroke-width="1.4">
+          <rect x="8" y="3" width="8" height="18" rx="2"/><path d="M10 3V1.5h4V3"/><path d="M8 9h8"/><path d="M8 14h8"/>
+        </svg>
+        <h3>OxigasWeb</h3>
+        <p>Sitio comercial para una ferretería industrial que además vende gases, con catálogo de productos y ofertas conectado a una base de datos externa en tiempo real.</p>
+        <div class="stack">
+          <span class="chip">React 18</span><span class="chip">Vite</span><span class="chip">Supabase</span><span class="chip">Tailwind</span>
+        </div>
+        <div class="card-foot">
+          <span class="mono" style="font-size:11px; color:var(--muted);">LCP 767ms · GitHub Pages</span>
+          <a href="https://nazarenojoelespinosa.github.io/OxigasWeb/" target="_blank" rel="noopener" class="card-link">Ver sitio <span class="arrow">→</span></a>
+        </div>
+      </article>
+
+      <!-- SYS-02 Hoja de Ruta -->
+      <article class="card" id="hojaderuta">
+        <div class="card-top">
+          <span class="sysid mono">SYS-02</span>
+          <span class="tag tag-system">Mini sistema · Dashboard</span>
+        </div>
+        <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="var(--signal)" stroke-width="1.4">
+          <path d="M3 12c4-8 8 6 12-2s6-4 6-4"/><circle cx="3" cy="12" r="1.3" fill="var(--signal)"/><circle cx="21" cy="6" r="1.3" fill="var(--signal)"/>
+        </svg>
+        <h3>Hoja de Ruta Oxigas</h3>
+        <p>Herramienta logística para organizar rutas de entrega diarias, clientes y control de stock de garrafas, con navegación por pestañas y paneles de datos.</p>
+        <div class="stack">
+          <span class="chip">React</span><span class="chip">Radix UI</span><span class="chip">Tailwind</span>
+        </div>
+        <div class="card-foot">
+          <span class="mono" style="font-size:11px; color:var(--muted);">Railway</span>
+          <a href="https://hojaderutaoxigas.up.railway.app/" target="_blank" rel="noopener" class="card-link">Ver sistema <span class="arrow">→</span></a>
+        </div>
+      </article>
+
+      <!-- SYS-03 Alquileres -->
+      <article class="card" id="alquileres">
+        <div class="card-top">
+          <span class="sysid mono">SYS-03</span>
+          <span class="tag tag-system">Mini sistema · CRUD</span>
+        </div>
+        <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="var(--signal)" stroke-width="1.4">
+          <rect x="4" y="4" width="16" height="5" rx="1"/><rect x="4" y="11" width="16" height="5" rx="1"/><rect x="4" y="18" width="10" height="2" rx="1"/>
+        </svg>
+        <h3>Control de Alquileres de Cilindros</h3>
+        <p>Panel para rastrear el alquiler de cilindros: filtra clientes por nombre y estado de deuda, y hace seguimiento detallado de cada unidad.</p>
+        <div class="stack">
+          <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span>
+        </div>
+        <div class="card-foot">
+          <span class="mono" style="font-size:11px; color:var(--muted);">GitHub Pages</span>
+          <a href="https://nazarenojoelespinosa.github.io/Control-de-alquileres-de-cilindros/" target="_blank" rel="noopener" class="card-link">Ver sistema <span class="arrow">→</span></a>
+        </div>
+      </article>
+
+      <!-- SYS-04 Obssesive -->
+      <article class="card" id="obssesive">
+        <div class="card-top">
+          <span class="sysid mono">SYS-04</span>
+          <span class="tag tag-site">Landing page</span>
+        </div>
+        <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="var(--signal)" stroke-width="1.4">
+          <path d="M4 16l3-8h10l3 8" /><circle cx="7.5" cy="16" r="1.6"/><circle cx="16.5" cy="16" r="1.6"/>
+        </svg>
+        <h3>Obssesive — Estética del auto</h3>
+        <p>Landing page promocional para un centro de estética automotriz: servicios, trabajos realizados y canales de contacto.</p>
+        <div class="stack">
+          <span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">JavaScript</span>
+        </div>
+        <div class="card-foot">
+          <span class="mono" style="font-size:11px; color:var(--muted);">GitHub Pages</span>
+          <a href="https://nazarenojoelespinosa.github.io/Obssesive.github.io/" target="_blank" rel="noopener" class="card-link">Ver sitio <span class="arrow">→</span></a>
+        </div>
+      </article>
+
+      <!-- SYS-05 Ciudadela Norte -->
+      <article class="card" id="ciudadela">
+        <div class="card-top">
+          <span class="sysid mono">SYS-05</span>
+          <span class="tag tag-site">Sitio institucional</span>
+        </div>
+        <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="var(--signal)" stroke-width="1.4">
+          <circle cx="12" cy="9" r="3"/><path d="M4 20c1-4 5-6 8-6s7 2 8 6"/>
+        </svg>
+        <h3>Ciudadela Norte</h3>
+        <p>Sitio institucional de un club deportivo: promociona actividades como básquet, natación y pádel, e informa a socios y comunidad.</p>
+        <div class="stack">
+          <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">Bootstrap 5</span><span class="chip">JS</span>
+        </div>
+        <div class="card-foot">
+          <span class="mono" style="font-size:11px; color:var(--muted);">GitHub Pages</span>
+          <a href="https://nazarenojoelespinosa.github.io/CiudadelaNorte/" target="_blank" rel="noopener" class="card-link">Ver sitio <span class="arrow">→</span></a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="section" id="sobre-mi">
+    <div class="section-head"><h2>Sobre mí</h2></div>
+    <div class="about">
+      <div>
+        <p>Soy desarrollador full-stack. Trabajo tanto en sitios de cara al público — landings, sitios institucionales — como en sistemas internos que un negocio usa a diario: control de stock, rutas de entrega, gestión de clientes.</p>
+        <p>Me interesa particularmente conectar el frontend con datos reales: catálogos que se actualizan solos, paneles que reflejan el estado actual de una operación, no capturas estáticas. Uso React cuando el proyecto lo pide y JavaScript vanilla cuando no hace falta más.</p>
+        <p>Gran parte de este trabajo lo hice con asistencia de IA como parte de mi flujo: la uso para acelerar la implementación, pero las decisiones de arquitectura, qué construir y cómo resolver cada caso de uso son mías.</p>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="num">5</div><div class="label">Sistemas en producción</div></div>
+        <div class="metric"><div class="num">2</div><div class="label">Rubros con datos en vivo</div></div>
+        <div class="metric"><div class="num">3</div><div class="label">Mini sistemas / CRUD</div></div>
+        <div class="metric"><div class="num">2</div><div class="label">Sitios institucionales</div></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer id="contacto">
+  <div class="wrap footer-inner">
+    <div class="foot-note mono">© 2026 Nazareno Espinosa — todos los sistemas operativos</div>
+    <div class="footer-links">
+      <a href="https://github.com/NazarenoJoelEspinosa" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:nazarenojoelespinosa@gmail.com">Email</a>
+      <a href="https://wa.me/5491167421417" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
