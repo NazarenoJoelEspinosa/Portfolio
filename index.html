@@ -16,7 +16,8 @@
     <div class="brand"><span class="dot"></span> NAZARENO ESPINOSA <span class="mono" style="color:var(--muted); font-weight:400; font-size:12px;">/ dev</span></div>
     <nav class="navlinks">
       <a href="#sistemas">Proyectos</a>
-      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#stack">Stack</a>
+      <a href="#proceso">Cómo trabajo</a>
       <a href="#contacto">Contacto</a>
     </nav>
   </div>
@@ -26,18 +27,28 @@
   <section class="hero">
     <div class="hero-grid">
       <div>
+        <div class="operator-badge">
+          <img src="assets/avatar.jpg" alt="Foto de Nazareno Espinosa" class="operator-photo">
+          <div>
+            <div class="operator-name">Nazareno Espinosa</div>
+            <div class="operator-role mono">Desarrollador Full Stack</div>
+            <div class="operator-status mono"><span class="led"></span> ONLINE · DEV-001</div>
+          </div>
+        </div>
+
         <div class="eyebrow">5 sistemas activos</div>
         <h1 class="title">Construyo sitios y<br>mini sistemas que<br><span>sostienen la operación real.</span></h1>
-        <p class="lede">Desarrollador full-stack. Diseño e implemento desde landing pages hasta paneles de gestión con datos en vivo — el tipo de herramienta que un negocio usa todos los días, no solo mira una vez.</p>
+        <p class="lede">Diseño e implemento desde landing pages hasta paneles de gestión con datos en vivo — el tipo de herramienta que un negocio usa todos los días, no solo mira una vez.</p>
         <div class="hero-actions">
           <a href="#sistemas" class="btn btn-primary">Ver proyectos ↓</a>
-          <a href="#contacto" class="btn btn-ghost">Contactarme</a>
+          <a href="https://github.com/NazarenoJoelEspinosa" target="_blank" rel="noopener" class="btn btn-ghost">GitHub ↗</a>
+          <a href="https://wa.me/5491167421417" target="_blank" rel="noopener" class="btn btn-ghost">Escribime por WhatsApp</a>
         </div>
       </div>
 
       <div class="console">
         <div class="console-head">
-          <span>Estado de sistemas</span>
+          <span class="mono">$ status --watch<span class="cursor">_</span></span>
           <span class="lights"><span></span><span></span><span></span></span>
         </div>
         <a href="#oxigas" class="console-row"><span class="led"></span><span class="name">OxigasWeb</span><span class="id mono">SYS-01</span><span class="status mono">ONLINE</span></a>
@@ -52,111 +63,169 @@
   <section class="section" id="sistemas">
     <div class="section-head">
       <h2>Proyectos</h2>
-      <span class="count mono">05 sistemas desplegados</span>
+      <span class="count mono">05 sistemas desplegados · click para ver detalle</span>
     </div>
 
     <div class="grid">
 
       <!-- SYS-01 OxigasWeb -->
-      <article class="card" id="oxigas">
-        <div class="card-top">
-          <span class="sysid mono">SYS-01</span>
-          <span class="tag tag-site">SPA dinámica</span>
+      <article class="card" id="oxigas" data-project="oxigas" tabindex="0">
+        <div class="card-media">
+          <img src="assets/oxigas.jpg" alt="Captura de OxigasWeb" loading="lazy">
+          <span class="sysid mono overlay-id">SYS-01</span>
+          <span class="tag tag-site overlay-tag">SPA dinámica</span>
         </div>
-        <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="var(--signal)" stroke-width="1.4">
-          <rect x="8" y="3" width="8" height="18" rx="2"/><path d="M10 3V1.5h4V3"/><path d="M8 9h8"/><path d="M8 14h8"/>
-        </svg>
-        <h3>OxigasWeb</h3>
-        <p>Sitio comercial para una ferretería industrial que además vende gases, con catálogo de productos y ofertas conectado a una base de datos externa en tiempo real.</p>
-        <div class="stack">
-          <span class="chip">React 18</span><span class="chip">Vite</span><span class="chip">Supabase</span><span class="chip">Tailwind</span>
-        </div>
-        <div class="card-foot">
-          <span class="mono" style="font-size:11px; color:var(--muted);">LCP 767ms · GitHub Pages</span>
-          <a href="https://nazarenojoelespinosa.github.io/OxigasWeb/" target="_blank" rel="noopener" class="card-link">Ver sitio <span class="arrow">→</span></a>
+        <div class="card-body">
+          <h3>OxigasWeb</h3>
+          <p>Ferretería industrial con más de 60 años en el rubro. Catálogo de gases comprimidos y herramientas conectado a Supabase, con cotización y contacto directo por WhatsApp, cubriendo 6 zonas de entrega en el oeste del GBA.</p>
+          <div class="stack">
+            <span class="chip">React 18</span><span class="chip">Vite</span><span class="chip">Supabase</span><span class="chip">Tailwind</span>
+          </div>
+          <div class="card-foot">
+            <button class="card-link detail-btn" data-project="oxigas">Ver detalle</button>
+            <a href="https://nazarenojoelespinosa.github.io/OxigasWeb/" target="_blank" rel="noopener" class="card-link" onclick="event.stopPropagation()">En vivo <span class="arrow">↗</span></a>
+          </div>
         </div>
       </article>
 
       <!-- SYS-02 Hoja de Ruta -->
-      <article class="card" id="hojaderuta">
-        <div class="card-top">
-          <span class="sysid mono">SYS-02</span>
-          <span class="tag tag-system">Mini sistema · Dashboard</span>
+      <article class="card" id="hojaderuta" data-project="hojaderuta" tabindex="0">
+        <div class="card-media">
+          <img src="assets/hojaderuta.jpg" alt="Captura de Hoja de Ruta Oxigas" loading="lazy">
+          <span class="sysid mono overlay-id">SYS-02</span>
+          <span class="tag tag-system overlay-tag">Mini sistema · Dashboard</span>
         </div>
-        <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="var(--signal)" stroke-width="1.4">
-          <path d="M3 12c4-8 8 6 12-2s6-4 6-4"/><circle cx="3" cy="12" r="1.3" fill="var(--signal)"/><circle cx="21" cy="6" r="1.3" fill="var(--signal)"/>
-        </svg>
-        <h3>Hoja de Ruta Oxigas</h3>
-        <p>Herramienta logística para organizar rutas de entrega diarias, clientes y control de stock de garrafas, con navegación por pestañas y paneles de datos.</p>
-        <div class="stack">
-          <span class="chip">React</span><span class="chip">Radix UI</span><span class="chip">Tailwind</span>
-        </div>
-        <div class="card-foot">
-          <span class="mono" style="font-size:11px; color:var(--muted);">Railway</span>
-          <a href="https://hojaderutaoxigas.up.railway.app/" target="_blank" rel="noopener" class="card-link">Ver sistema <span class="arrow">→</span></a>
+        <div class="card-body">
+          <h3>Hoja de Ruta Oxigas</h3>
+          <p>Organiza los pedidos diarios de garrafas y gases por repartidor y turno (mañana/tarde), autocompleta direcciones y guarda historial de clientes para no repetir carga de datos.</p>
+          <div class="stack">
+            <span class="chip">React</span><span class="chip">Radix UI</span><span class="chip">Tailwind</span>
+          </div>
+          <div class="card-foot">
+            <button class="card-link detail-btn" data-project="hojaderuta">Ver detalle</button>
+            <a href="https://hojaderutaoxigas.up.railway.app/" target="_blank" rel="noopener" class="card-link" onclick="event.stopPropagation()">En vivo <span class="arrow">↗</span></a>
+          </div>
         </div>
       </article>
 
       <!-- SYS-03 Alquileres -->
-      <article class="card" id="alquileres">
-        <div class="card-top">
-          <span class="sysid mono">SYS-03</span>
-          <span class="tag tag-system">Mini sistema · CRUD</span>
+      <article class="card" id="alquileres" data-project="alquileres" tabindex="0">
+        <div class="card-media">
+          <img src="assets/alquileres.jpg" alt="Captura de Control de Alquileres de Cilindros" loading="lazy">
+          <span class="sysid mono overlay-id">SYS-03</span>
+          <span class="tag tag-system overlay-tag">Mini sistema · CRUD</span>
         </div>
-        <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="var(--signal)" stroke-width="1.4">
-          <rect x="4" y="4" width="16" height="5" rx="1"/><rect x="4" y="11" width="16" height="5" rx="1"/><rect x="4" y="18" width="10" height="2" rx="1"/>
-        </svg>
-        <h3>Control de Alquileres de Cilindros</h3>
-        <p>Panel para rastrear el alquiler de cilindros: filtra clientes por nombre y estado de deuda, y hace seguimiento detallado de cada unidad.</p>
-        <div class="stack">
-          <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span>
-        </div>
-        <div class="card-foot">
-          <span class="mono" style="font-size:11px; color:var(--muted);">GitHub Pages</span>
-          <a href="https://nazarenojoelespinosa.github.io/Control-de-alquileres-de-cilindros/" target="_blank" rel="noopener" class="card-link">Ver sistema <span class="arrow">→</span></a>
+        <div class="card-body">
+          <h3>Control de Alquileres de Cilindros</h3>
+          <p>Gestiona 167 cilindros en alquiler: identifica de un vistazo clientes con más de 3 meses de deuda, próximos vencimientos, y permite exportar reportes a Excel.</p>
+          <div class="stack">
+            <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span>
+          </div>
+          <div class="card-foot">
+            <button class="card-link detail-btn" data-project="alquileres">Ver detalle</button>
+            <a href="https://nazarenojoelespinosa.github.io/Control-de-alquileres-de-cilindros/" target="_blank" rel="noopener" class="card-link" onclick="event.stopPropagation()">En vivo <span class="arrow">↗</span></a>
+          </div>
         </div>
       </article>
 
       <!-- SYS-04 Obssesive -->
-      <article class="card" id="obssesive">
-        <div class="card-top">
-          <span class="sysid mono">SYS-04</span>
-          <span class="tag tag-site">Landing page</span>
+      <article class="card" id="obssesive" data-project="obssesive" tabindex="0">
+        <div class="card-media">
+          <img src="assets/obsessive.jpg" alt="Captura de Obssesive" loading="lazy">
+          <span class="sysid mono overlay-id">SYS-04</span>
+          <span class="tag tag-site overlay-tag">Landing page</span>
         </div>
-        <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="var(--signal)" stroke-width="1.4">
-          <path d="M4 16l3-8h10l3 8" /><circle cx="7.5" cy="16" r="1.6"/><circle cx="16.5" cy="16" r="1.6"/>
-        </svg>
-        <h3>Obssesive — Estética del auto</h3>
-        <p>Landing page promocional para un centro de estética automotriz: servicios, trabajos realizados y canales de contacto.</p>
-        <div class="stack">
-          <span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">JavaScript</span>
-        </div>
-        <div class="card-foot">
-          <span class="mono" style="font-size:11px; color:var(--muted);">GitHub Pages</span>
-          <a href="https://nazarenojoelespinosa.github.io/Obssesive.github.io/" target="_blank" rel="noopener" class="card-link">Ver sitio <span class="arrow">→</span></a>
+        <div class="card-body">
+          <h3>Obssesive — Estética del auto</h3>
+          <p>Landing con reserva de turnos online para un taller de detailing automotor: presenta servicios, trabajos realizados y canales de contacto.</p>
+          <div class="stack">
+            <span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">JavaScript</span>
+          </div>
+          <div class="card-foot">
+            <button class="card-link detail-btn" data-project="obssesive">Ver detalle</button>
+            <a href="https://nazarenojoelespinosa.github.io/Obssesive.github.io/" target="_blank" rel="noopener" class="card-link" onclick="event.stopPropagation()">En vivo <span class="arrow">↗</span></a>
+          </div>
         </div>
       </article>
 
       <!-- SYS-05 Ciudadela Norte -->
-      <article class="card" id="ciudadela">
-        <div class="card-top">
-          <span class="sysid mono">SYS-05</span>
-          <span class="tag tag-site">Sitio institucional</span>
+      <article class="card" id="ciudadela" data-project="ciudadela" tabindex="0">
+        <div class="card-media">
+          <img src="assets/ciudadela.jpg" alt="Captura de Ciudadela Norte" loading="lazy">
+          <span class="sysid mono overlay-id">SYS-05</span>
+          <span class="tag tag-site overlay-tag">Sitio institucional</span>
         </div>
-        <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="var(--signal)" stroke-width="1.4">
-          <circle cx="12" cy="9" r="3"/><path d="M4 20c1-4 5-6 8-6s7 2 8 6"/>
-        </svg>
-        <h3>Ciudadela Norte</h3>
-        <p>Sitio institucional de un club deportivo: promociona actividades como básquet, natación y pádel, e informa a socios y comunidad.</p>
-        <div class="stack">
-          <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">Bootstrap 5</span><span class="chip">JS</span>
-        </div>
-        <div class="card-foot">
-          <span class="mono" style="font-size:11px; color:var(--muted);">GitHub Pages</span>
-          <a href="https://nazarenojoelespinosa.github.io/CiudadelaNorte/" target="_blank" rel="noopener" class="card-link">Ver sitio <span class="arrow">→</span></a>
+        <div class="card-body">
+          <h3>Ciudadela Norte</h3>
+          <p>Sitio institucional de un club deportivo multi-actividad (básquet, natación, pádel), con sección de socios y buffet, pensado para informar a la comunidad.</p>
+          <div class="stack">
+            <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">Bootstrap 5</span><span class="chip">JS</span>
+          </div>
+          <div class="card-foot">
+            <button class="card-link detail-btn" data-project="ciudadela">Ver detalle</button>
+            <a href="https://nazarenojoelespinosa.github.io/CiudadelaNorte/" target="_blank" rel="noopener" class="card-link" onclick="event.stopPropagation()">En vivo <span class="arrow">↗</span></a>
+          </div>
         </div>
       </article>
 
+    </div>
+  </section>
+
+  <section class="section" id="stack">
+    <div class="section-head"><h2>Stack</h2></div>
+    <div class="stack-groups">
+      <div class="stack-group">
+        <div class="stack-group-title mono">Frontend</div>
+        <div class="stack">
+          <span class="chip">React</span><span class="chip">JavaScript</span><span class="chip">HTML5 / CSS3</span>
+          <span class="chip">Tailwind CSS</span><span class="chip">Bootstrap 5</span><span class="chip">Radix UI</span>
+        </div>
+      </div>
+      <div class="stack-group">
+        <div class="stack-group-title mono">Backend &amp; datos</div>
+        <div class="stack">
+          <span class="chip">Supabase</span><span class="chip">PostgreSQL</span><span class="chip">APIs REST</span>
+          <span class="chip">CRUD</span><span class="chip">Autenticación</span>
+        </div>
+      </div>
+      <div class="stack-group">
+        <div class="stack-group-title mono">Infraestructura</div>
+        <div class="stack">
+          <span class="chip">Vite</span><span class="chip">Railway</span><span class="chip">GitHub Pages</span>
+          <span class="chip">Git / GitHub</span><span class="chip">IA generativa (herramienta de trabajo)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="proceso">
+    <div class="section-head"><h2>Cómo trabajo</h2></div>
+    <div class="process">
+      <div class="process-step">
+        <div class="process-num mono">01</div>
+        <h4>Entiendo el problema</h4>
+        <p>Converso con quien va a usar el sistema todos los días: qué le hace perder tiempo hoy, qué datos necesita a mano.</p>
+      </div>
+      <div class="process-step">
+        <div class="process-num mono">02</div>
+        <h4>Diseño la solución</h4>
+        <p>Defino qué tan simple o compleja debe ser: a veces alcanza con HTML y JS, otras hace falta base de datos y backend.</p>
+      </div>
+      <div class="process-step">
+        <div class="process-num mono">03</div>
+        <h4>Desarrollo</h4>
+        <p>Construyo por partes, probando cada función contra casos reales antes de seguir con la siguiente.</p>
+      </div>
+      <div class="process-step">
+        <div class="process-num mono">04</div>
+        <h4>Despliego</h4>
+        <p>Publico en GitHub Pages o Railway según el proyecto, y dejo el sistema listo para usarse en producción.</p>
+      </div>
+      <div class="process-step">
+        <div class="process-num mono">05</div>
+        <h4>Mantengo</h4>
+        <p>Sigo disponible después del lanzamiento para ajustes, nuevas funciones o soporte cuando algo cambia.</p>
+      </div>
     </div>
   </section>
 
@@ -164,15 +233,41 @@
     <div class="section-head"><h2>Sobre mí</h2></div>
     <div class="about">
       <div>
-        <p>Soy desarrollador full-stack. Trabajo tanto en sitios de cara al público — landings, sitios institucionales — como en sistemas internos que un negocio usa a diario: control de stock, rutas de entrega, gestión de clientes.</p>
-        <p>Me interesa particularmente conectar el frontend con datos reales: catálogos que se actualizan solos, paneles que reflejan el estado actual de una operación, no capturas estáticas. Uso React cuando el proyecto lo pide y JavaScript vanilla cuando no hace falta más.</p>
+        <p>Me gusta desarrollar herramientas que resuelven problemas reales del día a día. La mayoría de mis proyectos nacieron de necesidades concretas en negocios donde construir un sistema propio terminó siendo más eficiente que adaptar uno genérico.</p>
+        <p>Empecé con sitios más simples — landings e institucionales — y fui subiendo la complejidad hacia paneles con datos en vivo, base de datos propia y lógica de negocio. Uso React cuando el proyecto lo pide y JavaScript vanilla cuando no hace falta más.</p>
         <p>Gran parte de este trabajo lo hice con asistencia de IA como parte de mi flujo: la uso para acelerar la implementación, pero las decisiones de arquitectura, qué construir y cómo resolver cada caso de uso son mías.</p>
       </div>
       <div class="metrics">
-        <div class="metric"><div class="num">5</div><div class="label">Sistemas en producción</div></div>
-        <div class="metric"><div class="num">2</div><div class="label">Rubros con datos en vivo</div></div>
-        <div class="metric"><div class="num">3</div><div class="label">Mini sistemas / CRUD</div></div>
-        <div class="metric"><div class="num">2</div><div class="label">Sitios institucionales</div></div>
+        <div class="metric"><div class="num" data-count="5">0</div><div class="label">Sistemas en producción</div></div>
+        <div class="metric"><div class="num" data-count="167">0</div><div class="label">Registros gestionados (Alquileres)</div></div>
+        <div class="metric"><div class="num" data-count="3">0</div><div class="label">Mini sistemas / CRUD</div></div>
+        <div class="metric"><div class="num" data-count="2">0</div><div class="label">Sitios institucionales</div></div>
+      </div>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-note mono">Evolución aproximada — avisame si el orden no es exacto y lo corrijo</div>
+      <div class="timeline-track">
+        <div class="timeline-step">
+          <div class="timeline-dot"></div>
+          <div class="timeline-label">Landing pages</div>
+          <div class="timeline-sub mono">Ciudadela Norte · Obssesive</div>
+        </div>
+        <div class="timeline-step">
+          <div class="timeline-dot"></div>
+          <div class="timeline-label">Catálogo dinámico</div>
+          <div class="timeline-sub mono">OxigasWeb</div>
+        </div>
+        <div class="timeline-step">
+          <div class="timeline-dot"></div>
+          <div class="timeline-label">Sistemas de gestión</div>
+          <div class="timeline-sub mono">Hoja de Ruta · Alquileres</div>
+        </div>
+        <div class="timeline-step">
+          <div class="timeline-dot active"></div>
+          <div class="timeline-label">Hoy</div>
+          <div class="timeline-sub mono">Sumando nuevos sistemas</div>
+        </div>
       </div>
     </div>
   </section>
@@ -188,6 +283,30 @@
     </div>
   </div>
 </footer>
+
+<!-- Modal de detalle de proyecto -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" id="modalClose" aria-label="Cerrar">×</button>
+    <img class="modal-img" id="modalImg" src="" alt="">
+    <div class="modal-body">
+      <div class="modal-tags">
+        <span class="sysid mono" id="modalSysId"></span>
+        <span class="tag" id="modalTag"></span>
+      </div>
+      <h3 id="modalTitle"></h3>
+      <p id="modalDesc"></p>
+      <div class="modal-block">
+        <div class="stack-group-title mono">Stack</div>
+        <div class="stack" id="modalStack"></div>
+      </div>
+      <div class="modal-actions">
+        <a class="btn btn-primary" id="modalLive" target="_blank" rel="noopener">Ver en vivo ↗</a>
+        <a class="btn btn-ghost" href="https://github.com/NazarenoJoelEspinosa" target="_blank" rel="noopener">Código en GitHub ↗</a>
+      </div>
+    </div>
+  </div>
+</div>
 
 <script src="script.js"></script>
 </body>
