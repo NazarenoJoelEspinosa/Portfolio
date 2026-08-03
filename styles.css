@@ -257,7 +257,7 @@
   }
   .process-step{ position:relative; background: var(--surface); border:1px solid var(--border); border-radius: var(--radius); padding:18px 16px; }
   .process-num{ color: var(--signal); font-size:13px; font-weight:600; margin-bottom:10px; }
-  .process-step h4{ font-size:14.5px; margin:0 0 8px; font-family:'Archivo', sans-serif; }
+  .process-step h3{ font-size:14.5px; margin:0 0 8px; font-family:'Archivo', sans-serif; font-weight:600; }
   .process-step p{ font-size:12.5px; line-height:1.55; color: var(--muted); margin:0; }
   @media (max-width: 860px){ .process{ grid-template-columns: 1fr; } .process::before{ display:none; } }
 
